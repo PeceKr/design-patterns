@@ -10,7 +10,7 @@ namespace DesignPatterns.Strategy
         public static IServiceProvider _serviceProvider { get; set; }
         static void Main(string[] args)
         {
-            // Inject Order Services
+            // Inject PayToll Services
             _serviceProvider = Resolver.ConfigureService();
             var _payTollService = (IPayTollServices)_serviceProvider.GetService(typeof(IPayTollServices));
 
