@@ -1,10 +1,12 @@
+using DesignPatterns.Strategy.Constants;
+
 namespace DesignPatterns.Strategy.Services.Commands
 {
     public class VanCommand : IPayTollCommand
     {
         public decimal GetPrice()
         {
-            return 30.6m;
+            return PriceConstants.VAN_PRICE;
         }
     }
 }
